@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import "scss/reset";
+@import "scss/var";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Thin", sans-serif;
+}

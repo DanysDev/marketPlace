@@ -1,0 +1,24 @@
+<section *ngFor="let product of myProducts" class="hero__container">
+    <div class="hero__container-text">
+        <h2>{{product.title}}</h2>
+        <p>{{product.description}}</p>
+        <h4>{{product.price | currency}}</h4>
+        <div>
+            <button>
+                <fa-icon [icon]="iconProduct"></fa-icon>
+                Ver el producto
+            </button>
+            <button>
+                <fa-icon [icon]="iconCar"></fa-icon>
+                Añadir al Carrito
+            </button>
+        </div>
+    </div>
+    <div class="hero__container-img"> <!-- *ngFor="let productImg of product.images" -->
+        <div class="hero__container-arrows">
+            <fa-icon [icon]="iconArrowLeft" class="icon-arrows arrow-left"></fa-icon>
+            <fa-icon [icon]="iconArrowRight" class="icon-arrows arrow-right"></fa-icon>
+        </div>
+        <img [alt]="product.title" [src]="product.images"/>
+    </div>
+</section>

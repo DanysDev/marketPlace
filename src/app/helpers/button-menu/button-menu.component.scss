@@ -1,0 +1,27 @@
+button {
+    width: 8rem;
+    height: 1.6rem;
+    border: .2px solid rgba(34, 34, 34, 0.1);
+    border-radius: 20px;
+    background-color: #F3F9FB;
+    color: #008ECC;
+    font-weight: bolder;
+    text-align: start;
+    padding: 0 20px;
+    transition: .3s ease-out;
+    position: relative;
+
+    .icon__down {
+        position: absolute;
+        right: 10px;
+        line-height: 1rem;
+        color: #222222;
+        font-weight: bolder;
+    }
+}
+
+button:hover {
+    border: .2px solid rgba(252, 252, 252, 0.1);
+    color: #F3F9FB;
+    background-color: #008ECC;
+}

@@ -1,0 +1,49 @@
+<header class="container__navbar">
+    <nav class="navbar navbar__up">
+
+        <section class="navbar__up-left">
+            <div class="navbar__menu-icon">
+                <fa-icon
+                    (click)="showMenuBar()"
+                    [icon]="iconMenuMobile"
+                    class="navbar__menu-faIcon"
+                ></fa-icon>
+            </div>
+            <hr>
+            <div>
+                <h2><span>Market</span>Place</h2>
+            </div>
+        </section>
+
+        <div class="navbar__up-center">
+            <label>
+                <fa-icon [icon]="iconInputSearch" class="navbar__icon-search"></fa-icon>
+                <input placeholder="Hoy quiero comprar....." required type="text">
+            </label>
+        </div>
+
+        <section class="navbar__up-right">
+            <div class="navbar__car">
+                <fa-icon [icon]="iconCar" class="navbar__car-icon"></fa-icon>
+                <div>1</div>
+            </div>
+            <hr>
+            <div class="navbar__btn">
+                <button class="navbar__btn-registry">
+                    <fa-icon [icon]="iconRegistry"></fa-icon>
+                    Registrar
+                </button>
+                <button class="navbar__btn-login">
+                    <fa-icon [icon]="iconLogin"></fa-icon>
+                    Entrar
+                </button>
+            </div>
+        </section>
+
+    </nav>
+    <nav *ngIf="seeBarMenu" class="navbar navbar__down">
+        <div class="navbar__dow-btn">
+            <app-button-menu></app-button-menu>
+        </div>
+    </nav>
+</header>

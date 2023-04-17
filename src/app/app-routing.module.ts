@@ -3,6 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {HomeCenterComponent} from "./layout/home-center/home-center.component";
 import {HomeComponent} from "./home/home.component";
 
+
 const routes: Routes = [
     {
         path: '',

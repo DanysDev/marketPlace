@@ -1,13 +1,15 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import {faCartShopping, faList, faMagnifyingGlass, faUserLarge, faUserPlus} from '@fortawesome/free-solid-svg-icons'
+
+
 
 @Component({
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
     styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit{
     //icons
     iconMenuMobile = faList
     iconCar = faCartShopping
@@ -18,6 +20,11 @@ export class NavbarComponent {
     //states
     seeBarMenu = true
 
+    constructor() {
+    }
+
+    ngOnInit(): void {
+    }
 
     showMenuBar() {
         this.seeBarMenu = !this.seeBarMenu

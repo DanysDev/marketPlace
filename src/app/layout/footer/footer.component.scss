@@ -9,53 +9,65 @@
         position: relative;
         height: calc(600px - 2rem);
         color: #F3F9FB;
+
         .background {
             position: absolute;
             right: 0;
         }
+
         .footer__up-inter {
             display: flex;
             padding: 40px 80px;
             gap: 80px;
             z-index: 5;
             height: 100%;
+
             .footer__up-left {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 24px;
+
                 h2 {
                     font-size: xx-large;
                     font-weight: bolder;
                 }
+
                 h4 {
                     margin-top: 40px;
                     font-size: large;
                     font-weight: bold;
                 }
+
                 .contacts {
                     display: flex;
                     flex-direction: column;
+                    gap: 8px;
                 }
+
                 .logos {
                     display: flex;
                     flex-direction: column;
                     gap: 16px;
                     margin-top: 40px;
+
                     .logo-images {
                         display: flex;
                         gap: 12px;
                     }
                 }
             }
+
             .footer__up-center {
                 display: flex;
                 flex-direction: column;
                 gap: 36px;
+
                 h4 {
                     font-size: x-large;
                     font-weight: bold;
                 }
+
                 ul {
                     list-style: circle;
                     display: flex;
@@ -64,15 +76,18 @@
                     padding-left: 25px;
                 }
             }
+
             .footer__up-right {
                 display: flex;
                 flex-direction: column;
                 gap: 36px;
+
                 h4 {
                     font-size: x-large;
                     font-weight: bold;
 
                 }
+
                 ul {
                     list-style: circle;
                     display: flex;
@@ -83,12 +98,14 @@
             }
         }
     }
+
     .footer__down {
         height: 2rem;
         color: #F3F9FB;
         text-align: center;
         line-height: 2rem;
         border-top: .2px solid rgba(243, 249, 251, 0.2);
+
         .icon-love {
             color: crimson;
         }

@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Product} from "../../interfaces/product.interface";
 import {faCartShopping, faHeart, faSquareArrowUpRight} from "@fortawesome/free-solid-svg-icons";
 import {ProductsService} from "../../services/products.service";
+import {StoreService} from "../../services/store.service";
 
 @Component({
     selector: 'app-most-sell',
@@ -13,6 +14,7 @@ export class MostSellComponent implements OnInit {
     iconCarShoppping = faCartShopping
     iconEye = faHeart
     iconSeeMore = faSquareArrowUpRight
+
 
     mostSellProducts: Product[] = [
         {
@@ -77,8 +79,7 @@ export class MostSellComponent implements OnInit {
         }
     ]
 
-    constructor(private productService: ProductsService) {
-    }
+    constructor(private productService: ProductsService, private storeService: StoreService) {}
 
     ngOnInit(): void {
         this.productService.getLimitedProducts(5)
@@ -87,4 +88,7 @@ export class MostSellComponent implements OnInit {
             })
     }
 
+    addProduct(product: Product) {
+        this.storeService.addProduct(product)
+    }
 }

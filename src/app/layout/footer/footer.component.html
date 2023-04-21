@@ -6,14 +6,20 @@
                 <h2>MarketPlace</h2>
                 <h4>Contactenos</h4>
                 <div class="contacts">
-                    <p>* WhatsApp +1202-918-2541</p>
-                    <p>* Llamenos al +1202-918-2541</p>
+                    <p>
+                        <fa-icon [icon]="iconWhatsapp"></fa-icon>
+                        WhatsApp +1202-918-2541
+                    </p>
+                    <p>
+                        <fa-icon [icon]="iconPhone"></fa-icon>
+                        Llamenos al +1202-918-2541
+                    </p>
                 </div>
                 <div class="logos">
                     <h4>Descarga la App</h4>
                     <span class="logo-images">
-                        <img src="assets/apple.png" alt="logo apple" />
-                        <img src="assets/android.png" alt="logo android" />
+                        <img alt="logo apple" src="assets/apple.png"/>
+                        <img alt="logo android" src="assets/android.png"/>
                     </span>
                 </div>
             </section>
@@ -45,7 +51,8 @@
     </section>
     <section class="footer__down">
         <div>
-            Este MarketPlace esta desarrollado con <span><fa-icon class="icon-love" [icon]="iconLove"></fa-icon></span> by DanysDev
+            Este MarketPlace esta desarrollado con <span><fa-icon [icon]="iconLove" class="icon-love"></fa-icon></span>
+            by DanysDev
         </div>
     </section>
 </footer>

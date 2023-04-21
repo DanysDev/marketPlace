@@ -49,11 +49,13 @@
             background-color: #F3F9FB;
 
             img {
-                min-width: 100%;
+                width: 100%;
                 height: 70%;
                 border: none;
                 border-radius: 12px 12px 0 0;
                 margin: 0 auto;
+                object-fit: cover;
+                overflow: hidden;
             }
 
             h2 {

@@ -8,7 +8,7 @@ import {ProductsService} from "../../services/products.service";
     templateUrl: './categories.component.html',
     styleUrls: ['./categories.component.scss']
 })
-export class CategoriesComponent implements OnInit{
+export class CategoriesComponent implements OnInit {
 
     iconSeeMore = faSquareArrowUpRight
 

@@ -11,8 +11,8 @@
         </section>
     </div>
     <div class="categories__cards">
-        <div class="card-category" *ngFor="let category of categories">
-            <img [src]="category.category.image" [alt]="category.category.name">
+        <div *ngFor="let category of categories" class="card-category">
+            <img [alt]="category.category.name" [src]="category.category.image">
             <h3>{{category.category.name}}</h3>
         </div>
     </div>

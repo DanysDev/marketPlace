@@ -16,8 +16,9 @@ import {ButtonMenuComponent} from './helpers/button-menu/button-menu.component';
 import {HeroSliderComponent} from './components/hero-slider/hero-slider.component';
 import {MostSellComponent} from './components/most-sell/most-sell.component';
 import {CategoriesComponent} from './components/categories/categories.component';
-import { OfertsComponent } from './components/oferts/oferts.component';
-import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import {OfertsComponent} from './components/oferts/oferts.component';
+import {ContactFormComponent} from './components/contact-form/contact-form.component';
+import {SliderLoopComponent} from './components/slider-loop/slider-loop.component';
 
 @NgModule({
     declarations: [
@@ -33,7 +34,8 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
         MostSellComponent,
         CategoriesComponent,
         OfertsComponent,
-        ContactFormComponent
+        ContactFormComponent,
+        SliderLoopComponent
     ],
     imports: [
         BrowserModule,

@@ -76,6 +76,7 @@
             display: flex;
             align-items: center;
             gap: 16px;
+            position: relative;
 
             .navbar__car {
                 height: 1.4rem;
@@ -100,6 +101,71 @@
                 .navbar__car-icon {
                     font-size: 1.3rem;
                     color: #222222;
+                }
+            }
+            .show-car {
+                position: absolute;
+                background-color: #F3F9FB;
+                width: 500px;
+                height: 400px;
+                max-height: 800px;
+                top: 3rem;
+                right: 0;
+                z-index: 110;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 8px;
+                overflow: auto;
+
+                .show-car-title {
+                    font-size: large;
+                }
+
+                .show-car-card {
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid rgba(34, 34, 34, 0.1);
+                    height: 5rem;
+                    width: 100%;
+                    img {
+                        height: 5rem;
+                        width: 5rem;
+                        object-fit: cover;
+                        margin-right: 24px;
+                        border: 2px solid rgba(136, 136, 136, 0.3);
+                    }
+                    .show-car-content {
+                        margin: auto 0;
+                        .content-price {
+                            display: flex;
+                            gap: 2rem;
+                        }
+                    }
+                }
+                .show-car-add {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 6rem;
+                    .content-add-product {
+                        display: flex;
+                        gap: 12px;
+                        button {
+                            width: 1.6rem;
+                            height: 1.2rem;
+                        }
+                    }
+                }
+                .show-card-total {
+                    position: sticky;
+                    bottom: 0;
+                    z-index: 10;
+                    background-color: #212844;
+                    color: #F3F9FB;
+                    height: 3rem;
+                    width: 100%;
                 }
             }
 

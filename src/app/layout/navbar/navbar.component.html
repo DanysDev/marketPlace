@@ -24,8 +24,12 @@
 
         <section class="navbar__up-right">
             <div class="navbar__car">
-                <fa-icon [icon]="iconCar" class="navbar__car-icon"></fa-icon>
-                <div>1</div>
+                <fa-icon
+                    [icon]="iconCar"
+                    class="navbar__car-icon"
+                    (click)="showProductsCar()"
+                ></fa-icon>
+                <div>{{cantProduct}}</div>
             </div>
             <hr>
             <div class="navbar__btn">
@@ -38,6 +42,30 @@
                     Entrar
                 </button>
             </div>
+            <section class="show-car" *ngIf="productsCar">
+                <h2 class="show-car-title">Productos del carrito</h2>
+                <div class="show-car-card" *ngFor="let cardProduct of isProductsCart">
+                    <section class="show-car-image">
+                        <img [src]="cardProduct.images" alt="reloj">
+                    </section>
+                    <section class="show-car-content">
+                        <h3>{{cardProduct.title}}</h3>
+                        <div class="content-price">
+                            <p>{{cardProduct.price | currency}}</p>
+                        </div>
+                    </section>
+                    <section class="show-car-add">
+                        <p class="content-add-product">
+                            <button>-</button>
+                            0
+                            <button>+</button>
+                        </p>
+                    </section>
+                </div>
+                <div class="show-card-total">
+                    <p><strong>Total a pagar:</strong>{{totalCart}}</p>
+                </div>
+            </section>
         </section>
 
     </nav>

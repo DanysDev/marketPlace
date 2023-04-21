@@ -8,7 +8,7 @@ import {Product} from "../interfaces/product.interface";
 })
 export class ProductsService {
     //TODO: Puse 1 producto de límite para probar
-    urlProducts = 'https://api.escuelajs.co/api/v1/products?offset=1&limit=1'
+    urlProducts = 'https://api.escuelajs.co/api/v1/products'
     limitProducts = 'https://api.escuelajs.co/api/v1/products?offset=0&limit='
 
     constructor(private http: HttpClient) {

@@ -4,18 +4,22 @@
     gap: 40px;
     padding: 0 40px;
     margin: 40px 0;
+
     .categories__text {
         height: 2rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         h2 {
             font-size: x-large;
             font-weight: bolder;
+
             span {
                 color: #008ECC;
             }
         }
+
         button {
             font-size: medium;
             padding: .1rem .6rem;
@@ -23,10 +27,12 @@
             border: none;
         }
     }
+
     .categories__cards {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .card-category {
             display: flex;
             flex-direction: column;
@@ -37,11 +43,13 @@
             width: 250px;
             height: 300px;
             border: none;
+
             img {
                 width: 90%;
                 height: 70%;
                 border-radius: 50%;
             }
+
             h3 {
                 font-size: large;
                 font-weight: bolder;
